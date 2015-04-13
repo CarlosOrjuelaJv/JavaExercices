@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:customerJaxbhelper xmlns:ns2="aplicacionjbx.jaxbhelper">
+    <customerList>
+        <age>42</age>
+        <id>1000</id>
+        <name>pablo</name>
+    </customerList>
+    <customerList>
+        <age>32</age>
+        <id>1001</id>
+        <name>Andres</name>
+    </customerList>
+    <customerList>
+        <age>33</age>
+        <id>1002</id>
+        <name>Luisa</name>
+    </customerList>
+</ns2:customerJaxbhelper>

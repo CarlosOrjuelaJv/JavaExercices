@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>PruebaSokets</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+    </head>
+    <body>
+        <input type="text" id="mensaje" placeholder="Escribe tu mensaje">
+        <button id="enviar_mensaje">Enviar Mensaje</button>
+        <div>TODO write content</div>
+        <script>
+            var host = "ws;//http://localhost:8080/websokets/server.php";
+            var socket;
+
+
+            window.addEventListener('load', init, false);
+            
+            function init() {
+               
+        socket = new WebSocket(host);
+                socket.addEventListener('open', function(msg) {
+                    console.log(msg);
+                }, false);
+                
+                document.querySelector('#enviar_mensaje').addEventListener('click', function() {
+                    socket.send(document.getElementById('mensaje'.value));
+                }, false)
+            }
+        </script> 
+    </body>
+</html>
